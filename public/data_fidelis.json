@@ -1,0 +1,58 @@
+{
+    "data": [
+      {
+        "id": "1",
+        "name": "fidelisendpoint_datastore(9.4.6)",
+        "ip_address": "172.19.0.5",
+        "status": "running"
+      },
+      {
+        "id": "2",
+        "name": "fidelisendpoint_datastoremanager (9.4.6)",
+        "ip_address": "172.19.0.2",
+        "status": "running"
+      },
+      {
+        "id": "3",
+        "name": "fidelisendpoint_definitionstore (9.4.6)",
+        "ip_address": "172.19.0.7",
+        "status": "running"
+      },
+      {
+        "id": "4",
+        "name": "fidelisendpoint_endpointgateway (9.4.6)",
+        "ip_address": "172.19.0.9",
+        "status": "running"
+      },
+      {
+        "id": "5",
+        "name": "fidelisendpoint_endpointhub (9.4.6)",
+        "ip_address": "172.19.0.10",
+        "status": "running"
+      },
+      {
+        "id": "6",
+        "name": "fidelisendpoint_eventsqueryservice (9.4.6)",
+        "ip_address": "172.19.0.3",
+        "status": "running"
+      },
+      {
+        "id": "7",
+        "name": "fidelisendpoint_feedservice (9.4.6)",
+        "ip_address": "172.19.0.6",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "8",
+        "name": "fidelisendpoint_filestore (9.4.6)",
+        "ip_address": "172.19.0.8",
+        "status": "running"
+      },
+      {
+        "id": "9",
+        "name": "fidelisendpoint_postgres (9.4.6)",
+        "ip_address": "172.19.0.4",
+        "status": "running"
+      }
+    ]
+  }

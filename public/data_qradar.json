@@ -1,0 +1,94 @@
+{
+    "data": [
+      {
+        "id": "1",
+        "name": "console (console)",
+        "ip_address": "172.20.3.3",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "2",
+        "name": "EC",
+        "ip_address": "172.20.3.8",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "3",
+        "name": "EC",
+        "ip_address": "172.20.3.2",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "4",
+        "name": "EP",
+        "ip_address": "172.20.3.1",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "5",
+        "name": "ETC3",
+        "ip_address": "192.168.10.108",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "6",
+        "name": "EventCollectorQCHQ",
+        "ip_address": "186.37.7.111",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "7",
+        "name": "EvenCollectorTT286",
+        "ip_address": "186.86.200.105",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "8",
+        "name": "FLowCollector-LD3",
+        "ip_address": "192.168.10.107",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "9",
+        "name": "FLowCollectorA40",
+        "ip_address": "10.95.23.62",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "10",
+        "name": "FLowCollectorA91",
+        "ip_address": "10.127.50.34",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "11",
+        "name": "EventCollectorQCHQ",
+        "ip_address": "186.37.7.111",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "12",
+        "name": "EvenCollectorTT286",
+        "ip_address": "186.86.200.105",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "13",
+        "name": "FLowCollector-LD3",
+        "ip_address": "192.168.10.107",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "14",
+        "name": "FLowCollectorA40",
+        "ip_address": "10.95.23.62",
+        "status": "UNKNOWN"
+      },
+      {
+        "id": "15",
+        "name": "FLowCollectorA91",
+        "ip_address": "10.127.50.34",
+        "status": "ACTIVE"
+      }
+    ]
+  }
