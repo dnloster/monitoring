@@ -12,37 +12,37 @@
                 />
             </div>
 
-            <div class="item">
-                <div class="row">
-                    <div class="col-6 col-md-5 small-padding" :class="{ 'monitor-item': $root.userHeartbeatBar == 'bottom' || $root.userHeartbeatBar == 'none' }">
-                        <div class="info d-flex justify-content-between">
-                            <Uptime :monitor="monitor" type="24" :pill="true" />
-                            <span v-if="hasChildren" class="collapse-padding" @click.prevent="changeCollapsed">
-                                <font-awesome-icon icon="chevron-down" class="animated" :class="{ collapsed: isCollapsed}" />
-                            </span>
-                            {{ monitorName }}
-                            <a target="_blank">{{ monitor.url.substring(0,30)+"..." }}</a>
+            <router-link :to="monitorURL(monitor.id)" class="item" :class="{ 'disabled': ! monitor.active }">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-6 col-md-5 small-padding" :class="{ 'monitor-item': $root.userHeartbeatBar == 'bottom' || $root.userHeartbeatBar == 'none' }">
+                            <div class="info d-flex justify-content-between">
+                                <Uptime :monitor="monitor" type="24" :pill="true" />
+                                <span v-if="hasChildren" class="collapse-padding" @click.prevent="changeCollapsed">
+                                    <font-awesome-icon icon="chevron-down" class="animated" :class="{ collapsed: isCollapsed}" />
+                                </span>
+                                {{ monitorName }}
+                                <a :href="monitor.url" target="_blank">{{ monitor.url.substring(0,30)+"..." }}</a>
+                            </div>
+                            <div v-if="monitor.tags.length > 0" class="tags">
+                                <Tag v-for="tag in monitor.tags" :key="tag" :item="tag" :size="'sm'" />
+                            </div>
                         </div>
-                        <div v-if="monitor.tags.length > 0" class="tags">
-                            <Tag v-for="tag in monitor.tags" :key="tag" :item="tag" :size="'sm'" />
+                        <div v-show="$root.userHeartbeatBar == 'normal'" :key="$root.userHeartbeatBar" class="col-6 col-md-7 d-flex gap-5">
+                            <HeartbeatBar ref="heartbeatBar" size="small" :monitor-id="monitor.id" />
+                            <div class="bottom-style ">
+                                <span>{{ $t('Contact') }}: <span id="copyToClipboard">{{ monitor.contact }} </span></span>
+                            </div>
                         </div>
                     </div>
-                    <div v-show="$root.userHeartbeatBar == 'normal'" :key="$root.userHeartbeatBar" class="col-6 col-md-7 d-flex gap-5">
-                        <HeartbeatBar ref="heartbeatBar" size="small" :monitor-id="monitor.id" />
-                        <div class="bottom-style ">
-                            <span>{{ $t('Contact') }}: <span id="copyToClipboard" @click.prevent="copyToClipboard()">{{ monitor.contact }} <font-awesome-icon icon="clipboard" /> </span></span>
+
+                    <div v-if="$root.userHeartbeatBar == 'bottom'" class="row">
+                        <div class="col-12 bottom-style">
+                            <HeartbeatBar ref="heartbeatBar" size="small" :monitor-id="monitor.id" />
                         </div>
                     </div>
                 </div>
-    
-                <div v-if="$root.userHeartbeatBar == 'bottom'" class="row">
-                    <div class="col-12 bottom-style">
-                        <HeartbeatBar ref="heartbeatBar" size="small" :monitor-id="monitor.id" />
-                    </div>
-                </div>
-            </div>
-            <!-- <router-link :to="monitorURL(monitor.id)" class="item" :class="{ 'disabled': ! monitor.active }">
-            </router-link> -->
+            </router-link>
         </div>
 
         <transition name="slide-fade-up">
@@ -197,9 +197,9 @@ export default {
         /**
          * Changes the collapsed value of the current monitor and saves it to local storage
          */
-        copyToClipboard() {
-            navigator.clipboard.writeText();
-        },
+        // copyToClipboard() {
+        //     navigator.clipboard.writeText();
+        // },
 
         changeCollapsed() {
             this.isCollapsed = !this.isCollapsed;

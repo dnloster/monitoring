@@ -404,7 +404,7 @@ export default {
             this.$root.deleteMonitor(this.monitor.id, (res) => {
                 if (res.ok) {
                     toast.success(res.msg);
-                    this.$router.push("/dashboard");
+                    this.$router.push("/monitoring");
                 } else {
                     toast.error(res.msg);
                 }
