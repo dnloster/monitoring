@@ -22,7 +22,7 @@ import ManageMaintenance from "./pages/ManageMaintenance.vue";
 import APIKeys from "./components/settings/APIKeys.vue";
 import QradarSystem from "./components/QradarSystem.vue";
 import FidelisSystem from "./components/FidelisSystem.vue";
-import TA21 from "./components/TA21.vue";
+import TA21 from "./pages/TA21.vue";
 import VCM from "./components/VCM.vue";
 import FMSFMC from "./components/FMSFMC.vue";
 
@@ -205,6 +205,12 @@ const routes = [
     {
         path: "/ta21",
         component: TA21,
+        children: [
+            {
+                path: "/addta21",
+                component: EditMonitor,
+            },
+        ],
     },
     {
         path: "/vcm",

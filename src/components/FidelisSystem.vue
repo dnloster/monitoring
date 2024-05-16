@@ -18,7 +18,7 @@ const columns = [
         <div class="shadow-box mb-3">
             <div class="list-header bg-info">
                 <div class="header-title">
-                    <h1 class="text-center mt-3 mb-5">Fidelis</h1>
+                    <h1 class="text-center mt-3 mb-5 text-white">Fidelis</h1>
                 </div>
             </div>
             <DataTable :columns="columns" ajax="/data_fidelis.json" class="table table-hover table-striped" width="100%">
