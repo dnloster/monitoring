@@ -23,21 +23,25 @@
                 </div>
 
                 <div class="form-floating mt-3">
-                    <input id="floatingInput" v-model="username" type="text" class="form-control" :placeholder="$t('Username')" required data-cy="username-input">
+                    <input id="floatingInput" v-model="username" type="text" class="form-control"
+                        :placeholder="$t('Username')" required data-cy="username-input">
                     <label for="floatingInput">{{ $t("Username") }}</label>
                 </div>
 
                 <div class="form-floating mt-3">
-                    <input id="floatingPassword" v-model="password" type="password" class="form-control" :placeholder="$t('Password')" required data-cy="password-input">
+                    <input id="floatingPassword" v-model="password" type="password" class="form-control"
+                        :placeholder="$t('Password')" required data-cy="password-input">
                     <label for="floatingPassword">{{ $t("Password") }}</label>
                 </div>
 
                 <div class="form-floating mt-3">
-                    <input id="repeat" v-model="repeatPassword" type="password" class="form-control" :placeholder="$t('Repeat Password')" required data-cy="password-repeat-input">
+                    <input id="repeat" v-model="repeatPassword" type="password" class="form-control"
+                        :placeholder="$t('Repeat Password')" required data-cy="password-repeat-input">
                     <label for="repeat">{{ $t("Repeat Password") }}</label>
                 </div>
 
-                <button class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing" data-cy="submit-setup-form">
+                <button class="w-100 btn btn-primary mt-3" type="submit" :disabled="processing"
+                    data-cy="submit-setup-form">
                     {{ $t("Create") }}
                 </button>
             </form>
@@ -63,7 +67,7 @@ export default {
     },
     mounted() {
         this.$root.getSocket().emit("needSetup", (needSetup) => {
-            if (! needSetup) {
+            if (!needSetup) {
                 this.$router.push("/");
             }
         });
@@ -109,21 +113,21 @@ export default {
 }
 
 .form-floating {
-    > .form-select {
+    >.form-select {
         padding-left: 1.3rem;
         padding-top: 1.525rem;
         line-height: 1.35;
 
-        ~ label {
+        ~label {
             padding-left: 1.3rem;
         }
     }
 
-    > label {
+    >label {
         padding-left: 1.3rem;
     }
 
-    > .form-control {
+    >.form-control {
         padding-left: 1.3rem;
     }
 }
