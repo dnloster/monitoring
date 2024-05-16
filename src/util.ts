@@ -373,7 +373,7 @@ export function genSecret(length = 64) {
  * @returns Formatted relative path
  */
 export function getMonitorRelativeURL(id: string) {
-    return "/dashboard/" + id;
+    return "/monitoring/" + id;
 }
 
 /**

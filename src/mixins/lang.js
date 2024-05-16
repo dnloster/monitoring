@@ -10,7 +10,7 @@ export default {
     },
 
     async created() {
-        if (this.language !== "en") {
+        if (this.language !== "vi") {
             await this.changeLang(this.language);
         }
     },
@@ -24,11 +24,12 @@ export default {
     methods: {
         /** Change the application language */
         async changeLang(lang) {
-            let message = (await langModules["../lang/" + lang + ".json"]()).default;
+            let message = (await langModules["../lang/" + lang + ".json"]())
+                .default;
             this.$i18n.setLocaleMessage(lang, message);
             this.$i18n.locale = lang;
             localStorage.locale = lang;
             setPageLocale();
-        }
-    }
+        },
+    },
 };

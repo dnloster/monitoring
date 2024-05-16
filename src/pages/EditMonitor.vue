@@ -1444,7 +1444,7 @@ message HealthCheckResponse {
                         toast.success(res.msg);
                         this.processing = false;
                         this.$root.getMonitorList();
-                        this.$router.push("/dashboard/" + res.monitorID);
+                        this.$router.push("/monitoring/" + res.monitorID);
 
                     } else {
                         toast.error(res.msg);

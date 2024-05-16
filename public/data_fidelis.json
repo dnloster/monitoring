@@ -40,7 +40,7 @@
         "id": "7",
         "name": "fidelisendpoint_feedservice (9.4.6)",
         "ip_address": "172.19.0.6",
-        "status": "ACTIVE"
+        "status": "running"
       },
       {
         "id": "8",

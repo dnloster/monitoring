@@ -22,11 +22,11 @@
             </a>
 
             <ul class="nav nav-pills align-items-center">
-                <!-- <li v-if="$root.loggedIn" class="nav-item me-2">
-                    <router-link to="/manage-status-page" class="nav-link">
-                        <font-awesome-icon icon="stream" /> {{ $t("Status Pages") }}
+                <li v-if="$root.loggedIn" class="nav-item me-2">
+                    <router-link to="/monitoring" class="nav-link">
+                        <font-awesome-icon icon="stream" /> {{ $t("Monitoring") }}
                     </router-link>
-                </li> -->
+                </li>
                 <li v-if="$root.loggedIn" class="nav-item me-2">
                     <router-link to="/dashboard" class="nav-link">
                         <font-awesome-icon icon="tachometer-alt" /> {{ $t("Dashboard") }}

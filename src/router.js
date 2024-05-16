@@ -3,7 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import EmptyLayout from "./layouts/EmptyLayout.vue";
 import Layout from "./layouts/Layout.vue";
 import Dashboard from "./pages/Dashboard.vue";
-import DashboardHome from "./pages/DashboardHome.vue";
+import Monitoring from "./pages/Monitoring.vue";
+import MonitoringHome from "./pages/MonitoringHome.vue";
 import Details from "./pages/Details.vue";
 import EditMonitor from "./pages/EditMonitor.vue";
 import EditMaintenance from "./pages/EditMaintenance.vue";
@@ -19,6 +20,11 @@ import DockerHosts from "./components/settings/Docker.vue";
 import MaintenanceDetails from "./pages/MaintenanceDetails.vue";
 import ManageMaintenance from "./pages/ManageMaintenance.vue";
 import APIKeys from "./components/settings/APIKeys.vue";
+import QradarSystem from "./components/QradarSystem.vue";
+import FidelisSystem from "./components/FidelisSystem.vue";
+import TA21 from "./components/TA21.vue";
+import VCM from "./components/VCM.vue";
+import FMSFMC from "./components/FMSFMC.vue";
 
 // Settings - Sub Pages
 import Appearance from "./components/settings/Appearance.vue";
@@ -45,16 +51,21 @@ const routes = [
         component: Layout,
         children: [
             {
-                path: "",
+                path: "/dashboard",
                 component: Dashboard,
+            },
+            {
+                path: "/monitoring",
+                // component: Dashboard,
+                component: Monitoring,
                 children: [
                     {
-                        name: "DashboardHome",
-                        path: "/dashboard",
-                        component: DashboardHome,
+                        name: "MonitoringHome",
+                        path: "/monitoring",
+                        component: MonitoringHome,
                         children: [
                             {
-                                path: "/dashboard/:id",
+                                path: "/monitoring/:id",
                                 component: EmptyLayout,
                                 children: [
                                     {
@@ -133,7 +144,7 @@ const routes = [
                                 path: "about",
                                 component: About,
                             },
-                        ]
+                        ],
                     },
                     {
                         path: "/manage-status-page",
@@ -182,6 +193,26 @@ const routes = [
     {
         path: "/:pathMatch(.*)*",
         component: NotFound,
+    },
+    {
+        path: "/qradar",
+        component: QradarSystem,
+    },
+    {
+        path: "/fidelis",
+        component: FidelisSystem,
+    },
+    {
+        path: "/ta21",
+        component: TA21,
+    },
+    {
+        path: "/vcm",
+        component: VCM,
+    },
+    {
+        path: "/fmsfmc",
+        component: FMSFMC,
     },
 ];
 

@@ -14,21 +14,23 @@ const columns = [
 </script>
 
 <template>
-    <div class="shadow-box mb-3" :style="boxStyle">
-        <div class="list-header">
-            <div class="header-title">
-                <h1 class="text-center mt-3 mb-5">Fidelis System Health Data</h1>
+    <div class="shadow-box w-75 m-auto">
+        <div class="shadow-box mb-3">
+            <div class="list-header bg-info">
+                <div class="header-title">
+                    <h1 class="text-center mt-3 mb-5">Fidelis</h1>
+                </div>
             </div>
+            <DataTable :columns="columns" ajax="/data_fidelis.json" class="table table-hover table-striped" width="100%">
+                <thead class="border-top-0">
+                    <tr>
+                        <th>Tên máy chủ</th>
+                        <th>Địa chỉ IP</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+            </DataTable>
         </div>
-        <DataTable :columns="columns" ajax="/data_fidelis.json" class="table table-hover" width="100%">
-            <thead class="border-top-0">
-                <tr class="text-white">
-                    <th>Tên máy chủ</th>
-                    <th>Địa chỉ IP</th>
-                    <th>Trạng thái</th>
-                </tr>
-            </thead>
-        </DataTable>
     </div>
 </template>
 
@@ -64,8 +66,4 @@ const columns = [
     }
 }
 
-.table > tbody > tr:nth-of-type(odd) {
-    background-color: #070a10 !important;
-    color: white !important;
-}
 </style>

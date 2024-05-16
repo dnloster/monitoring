@@ -1,7 +1,7 @@
 <template>
     <transition ref="tableContainer" name="slide-fade" appear>
-        <div v-if="$route.name === 'DashboardHome'">
-            <!-- <h1 class="mb-3">
+        <div v-if="$route.name === 'MonitoringHome'">
+            <h1 class="mb-3">
                 {{ $t("Quick Stats") }}
             </h1>
 
@@ -28,9 +28,9 @@
                         <span class="num text-secondary">{{ $root.stats.pause }}</span>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="shadow-box table-shadow-box" style="overflow-x: hidden;">
+            <div class="shadow-box table-shadow-box" style="overflow-x: hidden;">
                 <table class="table table-borderless table-hover">
                     <thead>
                         <tr>
@@ -42,7 +42,7 @@
                     </thead>
                     <tbody>
                         <tr v-for="(beat, index) in displayedRecords" :key="index" :class="{ 'shadow-box': $root.windowWidth <= 550}">
-                            <td><router-link :to="`/dashboard/${beat.monitorID}`">{{ beat.name }}</router-link></td>
+                            <td><router-link :to="`/monitoring/${beat.monitorID}`">{{ beat.name }}</router-link></td>
                             <td><Status :status="beat.status" /></td>
                             <td :class="{ 'border-0':! beat.msg}"><Datetime :value="beat.time" /></td>
                             <td class="border-0">{{ beat.msg }}</td>
@@ -64,8 +64,7 @@
                         :options="paginationConfig"
                     />
                 </div>
-            </div> -->
-            <h1 class="mb3 text-center">TA-21</h1>
+            </div>
         </div>
     </transition>
     <router-view ref="child" />
@@ -91,8 +90,8 @@ export default {
     data() {
         return {
             page: 1,
-            perPage: 25,
-            initialPerPage: 25,
+            perPage: 5,
+            initialPerPage: 5,
             heartBeatList: [],
             paginationConfig: {
                 hideCount: true,
@@ -194,5 +193,15 @@ table {
         table-layout: fixed;
         overflow-wrap: break-word;
     }
+}
+.num {
+    font-size: 30px;
+    color: $primary;
+    font-weight: bold;
+    display: block;
+}
+
+.col>h3{
+    font-size: 1.3rem !important;
 }
 </style>

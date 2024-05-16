@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-box mb-3" :style="boxStyle">
+    <div class="shadow-box mb-3">
         <div class="list-header">
             <div class="header-top">
                 <button class="btn btn-outline-normal ms-2" :class="{ 'active': selectMode }" type="button" @click="selectMode = !selectMode">
@@ -45,7 +45,7 @@
                 </span>
             </div>
         </div>
-        <div ref="monitorList" class="monitor-list" :class="{ scrollbar: scrollbar }" :style="monitorListStyle">
+        <div ref="monitorList" class="monitor-list" :class="{ scrollbar: scrollbar }">
             <div v-if="Object.keys($root.monitorList).length === 0" class="text-center mt-3">
                 {{ $t("No Monitors, please") }} <router-link to="/add">{{ $t("add one") }}</router-link>
             </div>
@@ -60,37 +60,6 @@
                 :select="select"
                 :deselect="deselect"
             />
-        </div>
-        <h1 class="my-3">
-            {{ $t("Quick Stats") }}
-        </h1>
-
-        <div class="shadow-box big-padding text-center">
-            <div class="row">
-                <div class="col">
-                    <h3>{{ $t("Up") }}</h3>
-                    <span class="num">{{ $root.stats.up }}</span>
-                </div>
-                <div class="col">
-                    <h3>{{ $t("Down") }}</h3>
-                    <span class="num text-danger">{{ $root.stats.down }}</span>
-                </div>
-                <div class="col">
-                    <h3>{{ $t("Maintenance") }}</h3>
-                    <span class="num text-maintenance">{{ $root.stats.maintenance }}</span>
-                </div>
-                <div class="col">
-                    <h3>{{ $t("Unknown") }}</h3>
-                    <span class="num text-secondary">{{ $root.stats.unknown }}</span>
-                </div>
-                <div class="col">
-                    <h3>{{ $t("pauseDashboardHome") }}</h3>
-                    <span class="num text-secondary">{{ $root.stats.pause }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-end">
-            <router-link to="/" class="btn btn-primary mb-3"><font-awesome-icon icon="list" /> {{ $t("Details") }}</router-link>
         </div>
     </div>
 
