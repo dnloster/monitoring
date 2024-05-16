@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "av.nlsi.vn:10100",
+            "type": "download",
+            "status": "active"
+        },
+        {
+            "id": "2",
+            "name": "mb.av.nlsi.vn:20100",
+            "type": "manage",
+            "status": "active"
+        },
+        {
+            "id": "3",
+            "name": "mt.av.nlsi.vn:20200",
+            "type": "manage",
+            "status": "active"
+        },
+        {
+            "id": "4",
+            "name": "mn.av.nlsi.vn:20300",
+            "type": "manage",
+            "status": "not active"
+        }
+    ]
+}

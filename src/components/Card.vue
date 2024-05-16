@@ -1,6 +1,15 @@
 <!-- eslint-disable vue/require-default-prop -->
 <script>
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from "chart.js";
+import { Pie, Bar } from "vue-chartjs";
+
+ChartJS.register(ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
+
 export default {
+    components: {
+        Pie,
+        Bar
+    },
     props: {
         title: String,
         background: String,
@@ -11,6 +20,113 @@ export default {
         // eslint-disable-next-line vue/no-setup-props-destructure
         const { data } = props;
         return data;
+    },
+    data() {
+        const getActiveQradar = () => {
+            let activeQradar = 0;
+            if (this.data !== undefined) {
+                this.data.forEach((d) => {
+                    if (d.status === "ACTIVE") {
+                        return activeQradar++;
+                    }
+                });
+            }
+            return activeQradar;
+        };
+        const getUnknownQradar = () => {
+            let unknownQradar = 0;
+            if (this.data !== undefined) {
+                this.data.forEach((d) => {
+                    if (d.status === "UNKNOWN") {
+                        return unknownQradar++;
+                    }
+                });
+            }
+            return unknownQradar;
+        };
+        const getRunningFidelis = () => {
+            let runningFidelis = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.status === "running") {
+                        return runningFidelis++;
+                    }
+                });
+            }
+            return runningFidelis;
+        };
+        const getUnknownFidelis = () => {
+            let unknownFidelis = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.status !== "running") {
+                        return unknownFidelis++;
+                    }
+                });
+            }
+            return unknownFidelis;
+        };
+        const getDownloadActiveTA = () => {
+            let downloadActiveTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "download" && d.status === "active") {
+                        return downloadActiveTA++;
+                    }
+                });
+            }
+            return downloadActiveTA;
+        };
+        const getManageActiveTA = () => {
+            let ManageActiveTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "manage" && d.status === "active") {
+                        return ManageActiveTA++;
+                    }
+                });
+            }
+            return ManageActiveTA;
+        };
+        return {
+            dataChartQradar: {
+                labels: [ "Máy chủ đang hoạt động", "Máy chủ không xác định" ],
+                datasets: [
+                    {
+                        backgroundColor: [ "#5cdd8b", "#8e9092" ],
+                        data: [ getActiveQradar(), getUnknownQradar() ],
+                    },
+                ],
+            },
+            dataChartFidelis: {
+                labels: [ "Dịch vụ đang chạy", "Dịch vụ không hoạt động" ],
+                datasets: [
+                    {
+                        backgroundColor: [ "#0dcaf0", "#8e9092" ],
+                        data: [ getRunningFidelis(), getUnknownFidelis() ],
+                    },
+                ],
+            },
+            dataChartTA21: {
+                labels: [ "" ],
+                datasets: [
+                    {
+                        label: "Máy chủ Download đang hoạt động",
+                        backgroundColor: "#DD1B16",
+                        data: [ getDownloadActiveTA() ],
+                    },
+                    {
+                        label: "Máy chủ quản lý đang hoạt động",
+                        backgroundColor: "#8e9092",
+                        data: [ getManageActiveTA() ],
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        };
     },
     computed: {
         getActiveQradar() {
@@ -45,8 +161,63 @@ export default {
                 });
             }
             return runningFidelis;
+        },
+        getUnknownFidelis() {
+            let unknownFidelis = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.status !== "running") {
+                        return unknownFidelis++;
+                    }
+                });
+            }
+            return unknownFidelis;
+        },
+        getDownloadTA() {
+            let downloadTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "download") {
+                        return downloadTA++;
+                    }
+                });
+            }
+            return downloadTA;
+        },
+        getDownloadActiveTA() {
+            let downloadActiveTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "download" && d.status === "active") {
+                        return downloadActiveTA++;
+                    }
+                });
+            }
+            return downloadActiveTA;
+        },
+        getManageTA() {
+            let ManageTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "manage") {
+                        return ManageTA++;
+                    }
+                });
+            }
+            return ManageTA;
+        },
+        getManageActiveTA() {
+            let ManageActiveTA = 0;
+            if (this.data !== undefined) {
+                this.data.forEach(d => {
+                    if (d.type === "manage" && d.status === "active") {
+                        return ManageActiveTA++;
+                    }
+                });
+            }
+            return ManageActiveTA;
         }
-    }
+    },
 };
 
 </script>
@@ -58,35 +229,46 @@ export default {
                 <h1 class="text-center mt-3 text-white">{{ title }}</h1>
             </div>
         </div>
-        <div class="content p-3">
-            <h5>Tổng số máy chủ: {{ data !== undefined ? data.data.length : "0" }}</h5>
+        <div class="content p-3 row">
+            <div class="content-left col-12 col-xl-7">
+                <!-- Máy chủ đang chạy -->
+                <h6 v-if="title==='Qradar'">
+                    Máy chủ đang hoạt động: {{ getActiveQradar }} / {{ data.data.length }}
+                </h6>
+                <h6 v-if="title==='Fidelis'">
+                    Dịch vụ đang chạy: {{ getRunningFidelis }} / {{ data.data.length }}
+                </h6>
+                <h6 v-if="title==='TA-21'">
+                    Máy chủ Download đang hoạt động: {{ getDownloadActiveTA }} / {{ getDownloadTA }}
+                </h6>
+                <h6 v-if="title==='VCM'">
+                    Máy chủ Active:
+                </h6>
+                <h6 v-if="title==='FMS/FMC'">
+                    Máy chủ Active:
+                </h6>
 
-            <!-- Máy chủ đang chạy -->
-            <h5 v-if="title==='Qradar'">
-                Máy chủ active: {{ getActiveQradar }}
-            </h5>
-            <h5 v-if="title==='Fidelis'">
-                Máy chủ running: {{ getRunningFidelis }}
-            </h5>
-            <h5 v-if="title==='TA-21'">
-                Máy chủ Active:
-            </h5>
-            <h5 v-if="title==='VCM'">
-                Máy chủ Active:
-            </h5>
-            <h5 v-if="title==='FMS/FMC'">
-                Máy chủ Active:
-            </h5>
+                <!-- Máy chủ không chạy, chạy lỗi -->
+                <h6 v-if="title=== 'Qradar'">Máy chủ không xác định: {{ getUnknownQradar }} / {{ data.data.length }}</h6>
+                <h6 v-if="title=== 'Fidelis'">Dịch vụ không hoạt động: {{ getUnknownFidelis }} / {{ data.data.length }}</h6>
+                <h6 v-if="title=== 'TA-21'">Máy chủ quản lý đang hoạt động: {{ getManageActiveTA }} / {{ getManageTA }}</h6>
+                <h6 v-if="title=== 'VCM'">Máy chủ không xác định: </h6>
+                <h6 v-if="title=== 'FMS/FMC'">Máy chủ không xác định: </h6>
 
-            <!-- Máy chủ không chạy, chạy lỗi -->
-            <h5 v-if="title=== 'Qradar'">Máy chủ không xác định: {{ getUnknownQradar }}</h5>
-            <h5 v-if="title=== 'Fidelis'">Máy chủ không xác định: </h5>
-            <h5 v-if="title=== 'TA-21'">Máy chủ không xác định: </h5>
-            <h5 v-if="title=== 'VCM'">Máy chủ không xác định: </h5>
-            <h5 v-if="title=== 'FMS/FMC'">Máy chủ không xác định: </h5>
+                <!-- Log source Qradar -->
+                <h6 v-if="title=== 'Qradar'">Log Sources Error: 6 / 15</h6>
+                <!-- Endpoint Fidelis -->
+                <h6 v-if="title=== 'Fidelis'">Endpoint not running: 2 / 9</h6>
+            </div>
+            <div class="content-right col-12 col-xl-5">
+                <!-- Biểu đồ -->
+                <Pie v-if="title==='Qradar'" :data="dataChartQradar" :options="options" />
+                <Pie v-if="title==='Fidelis'" :data="dataChartFidelis" :options="options" />
+                <Bar v-if="title==='TA-21'" :data="dataChartTA21" :options="options" />
+            </div>
         </div>
-        <div class="footer d-flex justify-content-between p-3">
-            <span>Liên hệ:</span>
+        <div class="footer d-flex justify-content-between p-3 align-items-center">
+            <router-link to="/">Thông tin và liên hệ:</router-link>
             <router-link :to="details" target="_blank" class="btn text-white text-center d-inline-flex align-items-center gap-2" :class="background"><font-awesome-icon icon="list-ul" />Chi tiết</router-link>
         </div>
     </div>
@@ -134,5 +316,8 @@ export default {
         border-color: #7ce8a4;
         color: #000;
     }
+}
+canvas{
+    height: 300px;
 }
 </style>

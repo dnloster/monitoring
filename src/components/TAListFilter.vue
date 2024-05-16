@@ -156,7 +156,6 @@ export default {
     components: {
         MonitorListFilterDropdown,
         Status,
-        // Tag,
         Group
     },
     props: {
