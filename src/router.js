@@ -21,7 +21,7 @@ import MaintenanceDetails from "./pages/MaintenanceDetails.vue";
 import ManageMaintenance from "./pages/ManageMaintenance.vue";
 import APIKeys from "./components/settings/APIKeys.vue";
 import QradarSystem from "./components/QradarSystem.vue";
-import FidelisSystem from "./components/FidelisSystem.vue";
+import FidelisSystem from "./pages/FidelisSystem.vue";
 import TA21 from "./pages/TA21.vue";
 import VCM from "./components/VCM.vue";
 import FMSFMC from "./components/FMSFMC.vue";
