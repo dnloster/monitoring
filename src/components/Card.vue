@@ -116,8 +116,18 @@ export default {
                         data: [ getDownloadActiveTA() ],
                     },
                     {
+                        label: "Máy chủ Download không hoạt động",
+                        backgroundColor: "#DD1B",
+                        data: [ getManageActiveTA() ],
+                    },
+                    {
                         label: "Máy chủ quản lý đang hoạt động",
-                        backgroundColor: "#8e9092",
+                        backgroundColor: "##f8a",
+                        data: [ getManageActiveTA() ],
+                    },
+                    {
+                        label: "Máy chủ quản lý không hoạt động",
+                        backgroundColor: "#f26",
                         data: [ getManageActiveTA() ],
                     },
                 ],
