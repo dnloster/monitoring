@@ -26,3 +26,11 @@ extra/exe-builder/obj
 
 .vs
 .vscode
+
+public\a.json
+public\table.json
+public\tree.json
+public\table.json
+public\data_ta21.json
+public\data_qradar.json
+public\data_fidelis.json

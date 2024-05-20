@@ -90,45 +90,45 @@ export default {
         };
         return {
             dataChartQradar: {
-                labels: [ "Máy chủ đang hoạt động", "Máy chủ không xác định" ],
+                labels: ["Máy chủ đang hoạt động", "Máy chủ không xác định"],
                 datasets: [
                     {
-                        backgroundColor: [ "#5cdd8b", "#8e9092" ],
-                        data: [ getActiveQradar(), getUnknownQradar() ],
+                        backgroundColor: ["#5cdd8b", "#8e9092"],
+                        data: [getActiveQradar(), getUnknownQradar()],
                     },
                 ],
             },
             dataChartFidelis: {
-                labels: [ "Dịch vụ đang chạy", "Dịch vụ không hoạt động" ],
+                labels: ["Dịch vụ đang chạy", "Dịch vụ không hoạt động"],
                 datasets: [
                     {
-                        backgroundColor: [ "#0dcaf0", "#8e9092" ],
-                        data: [ getRunningFidelis(), getUnknownFidelis() ],
+                        backgroundColor: ["#0dcaf0", "#8e9092"],
+                        data: [getRunningFidelis(), getUnknownFidelis()],
                     },
                 ],
             },
             dataChartTA21: {
-                labels: [ "" ],
+                labels: [""],
                 datasets: [
                     {
                         label: "Máy chủ Download đang hoạt động",
                         backgroundColor: "#DD1B16",
-                        data: [ getDownloadActiveTA() ],
+                        data: [getDownloadActiveTA()],
                     },
                     {
                         label: "Máy chủ Download không hoạt động",
                         backgroundColor: "#DD1B",
-                        data: [ getManageActiveTA() ],
+                        data: [getManageActiveTA()],
                     },
                     {
                         label: "Máy chủ quản lý đang hoạt động",
                         backgroundColor: "##f8a",
-                        data: [ getManageActiveTA() ],
+                        data: [getManageActiveTA()],
                     },
                     {
                         label: "Máy chủ quản lý không hoạt động",
                         backgroundColor: "#f26",
-                        data: [ getManageActiveTA() ],
+                        data: [getManageActiveTA()],
                     },
                 ],
             },
@@ -242,44 +242,58 @@ export default {
         <div class="content p-3 row">
             <div class="content-left col-12 col-xl-7">
                 <!-- Máy chủ đang chạy -->
-                <h6 v-if="title==='Qradar'">
+                <h6 v-if="title === 'Qradar'">
                     Máy chủ đang hoạt động: {{ getActiveQradar }} / {{ data.data.length }}
                 </h6>
-                <h6 v-if="title==='Fidelis'">
+                <h6 v-if="title === 'Fidelis'">
                     Dịch vụ đang chạy: {{ getRunningFidelis }} / {{ data.data.length }}
                 </h6>
-                <h6 v-if="title==='TA-21'">
+                <h6 v-if="title === 'TA-21'">
                     Máy chủ Download đang hoạt động: {{ getDownloadActiveTA }} / {{ getDownloadTA }}
                 </h6>
-                <h6 v-if="title==='VCM'">
+                <h6 v-if="title === 'VCM'">
                     Máy chủ Active:
                 </h6>
-                <h6 v-if="title==='FMS/FMC'">
+                <h6 v-if="title === 'FMS/FMC'">
                     Máy chủ Active:
                 </h6>
 
                 <!-- Máy chủ không chạy, chạy lỗi -->
-                <h6 v-if="title=== 'Qradar'">Máy chủ không xác định: {{ getUnknownQradar }} / {{ data.data.length }}</h6>
-                <h6 v-if="title=== 'Fidelis'">Dịch vụ không hoạt động: {{ getUnknownFidelis }} / {{ data.data.length }}</h6>
-                <h6 v-if="title=== 'TA-21'">Máy chủ quản lý đang hoạt động: {{ getManageActiveTA }} / {{ getManageTA }}</h6>
-                <h6 v-if="title=== 'VCM'">Máy chủ không xác định: </h6>
-                <h6 v-if="title=== 'FMS/FMC'">Máy chủ không xác định: </h6>
+                <h6 v-if="title === 'Qradar'">Máy chủ không xác định: {{ getUnknownQradar }} / {{ data.data.length }}
+                </h6>
+                <h6 v-if="title === 'Fidelis'">Dịch vụ không hoạt động: {{ getUnknownFidelis }} / {{ data.data.length }}
+                </h6>
+                <h6 v-if="title === 'TA-21'">Máy chủ quản lý đang hoạt động: {{ getManageActiveTA }} / {{ getManageTA }}
+                </h6>
+                <h6 v-if="title === 'VCM'">Máy chủ không xác định: </h6>
+                <h6 v-if="title === 'FMS/FMC'">Máy chủ không xác định: </h6>
 
                 <!-- Log source Qradar -->
-                <h6 v-if="title=== 'Qradar'">Log Sources Error: 6 / 15</h6>
+                <h6 v-if="title === 'Qradar'">Log Sources Error: 6 / 15</h6>
                 <!-- Endpoint Fidelis -->
-                <h6 v-if="title=== 'Fidelis'">Endpoint not running: 2 / 9</h6>
+                <h6 v-if="title === 'Fidelis'">Endpoint not running: 2 / 9</h6>
             </div>
             <div class="content-right col-12 col-xl-5">
                 <!-- Biểu đồ -->
-                <Pie v-if="title==='Qradar'" :data="dataChartQradar" :options="options" />
-                <Pie v-if="title==='Fidelis'" :data="dataChartFidelis" :options="options" />
-                <Bar v-if="title==='TA-21'" :data="dataChartTA21" :options="options" />
+                <Pie v-if="title === 'Qradar'" :data="dataChartQradar" :options="options" />
+                <Pie v-if="title === 'Fidelis'" :data="dataChartFidelis" :options="options" />
+                <Bar v-if="title === 'TA-21'" :data="dataChartTA21" :options="options" />
             </div>
         </div>
         <div class="footer d-flex justify-content-between p-3 align-items-center">
-            <router-link to="/">Thông tin và liên hệ:</router-link>
-            <router-link :to="details" target="_blank" class="btn text-white text-center d-inline-flex align-items-center gap-2" :class="background"><font-awesome-icon icon="list-ul" />Chi tiết</router-link>
+            <!-- Thông tin liên hệ -->
+            <div class="d-inline-flex flex-column">
+                <h6>Thông tin và liên hệ:</h6>
+                <span v-if="title === 'Qradar'" style="font-size: 14px;">Nguyễn Tiến Dũng (0398178911)</span>
+                <span v-if="title === 'Fidelis'" style="font-size: 14px;">Nguyễn Tiến Dũng (0398178911)</span>
+                <span v-if="title === 'TA-21'" style="font-size: 14px;">Vũ Ngọc Cương (0983933818)</span>
+            </div>
+            <div class="d-inline-flex flex-row gap-2">
+                <router-link v-if="title === 'Qradar'" to="/qradar" class="btn text-white text-center bg-primary">System
+                    Health</router-link>
+                <router-link :to="details" class="btn text-white text-center d-flex flex-row gap-1 align-items-center"
+                    :class="background"><font-awesome-icon icon="list-ul" />Chi tiết</router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -316,18 +330,21 @@ export default {
     }
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #5cdd8b;
     border-color: #5cdd8b;
     color: #000;
 
-    &:hover, &:active, &:focus{
+    &:hover,
+    &:active,
+    &:focus {
         background-color: #7ce8a4;
         border-color: #7ce8a4;
         color: #000;
     }
 }
-canvas{
+
+canvas {
     height: 300px;
 }
 </style>

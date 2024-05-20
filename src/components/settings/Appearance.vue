@@ -42,7 +42,7 @@
                         class="btn-check"
                         name="theme"
                         autocomplete="off"
-                        value="dark"
+                        value="light"
                     />
                     <label class="btn btn-outline-primary" for="btncheck2">
                         {{ $t("Dark") }}

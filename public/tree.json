@@ -1,0 +1,1026 @@
+{
+    "data": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "name": "All",
+        "children": [
+            {
+                "id": "35a3beda-f159-4516-9d5e-3c3eb56dd639",
+                "name": "00. Mien Bac",
+                "children": [
+                    {
+                        "id": "b159f81d-f90c-4223-b784-69d2cdc840d4",
+                        "name": "00. SCH",
+                        "children": [
+                            {
+                                "id": "d3206385-d0fc-4281-90b6-00b298270776",
+                                "name": "Bộ Tham mưu-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "01ad4711-39a5-4537-9b93-8709b9aebeae",
+                                "name": "Cục Chính Trị-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "484d14a8-d0e5-48f0-a642-77f8a8ce2df8",
+                                "name": "Cục Hậu Cần - Kỹ Thuật",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "6f747d0a-3823-45ac-965d-d9c1aaabfd60",
+                                "name": "PGB_Surface",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "cf80e29c-e08e-4f9c-8e71-9fc20322af69",
+                                "name": "Phòng ATTT-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "c47b3aaf-7dda-482e-9e71-a65338a420bd",
+                                "name": "Phòng Phần mềm-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "b3e555c2-a0fb-4cbd-8714-02997bbe823c",
+                                "name": "Phòng Tài chính-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "6ba51d2f-4b5d-473b-8014-bd686de32a8b",
+                                "name": "Thanh Tra - BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "12e95ff1-b85f-4280-98bf-453a010886f9",
+                                "name": "Thủ trưởng - BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "90375737-6d3b-4d63-ae75-09b574688eb4",
+                                "name": "Uy ban Kiểm tra Đảng",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "e599fa23-1f3c-4235-aac6-6bad72760f39",
+                                "name": "VP-BTL",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "03923da4-856f-4fcd-88f0-25352bff321a",
+                        "name": "T1",
+                        "children": [
+                            {
+                                "id": "f3845d88-70f2-4d7a-a957-894c4cf79094",
+                                "name": "T1-MayChu",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "c4b3d117-5e71-442c-9f2d-bc7e73801117",
+                                "name": "T1-MayTram",
+                                "children": [
+                                    {
+                                        "id": "a6af9401-dc46-4499-8c20-047ed3bddb34",
+                                        "name": "00. CHTT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "ace1e6d2-a837-4914-ba10-a7f8729f9fcb",
+                                        "name": "01. TM",
+                                        "children": [
+                                            {
+                                                "id": "ea2fc6e4-8cdc-49a1-9a73-91016d945fd3",
+                                                "name": "TrMC",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            }
+                                        ],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "796f1a7b-dac7-4992-a195-b7baa8b7d81d",
+                                        "name": "02. CT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "78380e55-e719-4197-b21e-a281bf91ec67",
+                                        "name": "03. HCKT",
+                                        "children": [
+                                            {
+                                                "id": "69c2a853-2129-46f9-a19d-5817c3c4e1f8",
+                                                "name": "TrSC",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            }
+                                        ],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "2812684e-faff-4eed-a605-84e7b5f95da0",
+                                        "name": "04. TC",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "105faf24-183d-4488-96bb-00a6201c7f37",
+                                        "name": "cm11",
+                                        "children": [
+                                            {
+                                                "id": "32e9db5f-fb0d-4cf0-b3a1-2f0623256703",
+                                                "name": "c1",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "a9514a2b-1cc0-4be4-9613-22fc32d3669a",
+                                                "name": "c2",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "83786e09-e534-4c0e-908b-74e8068084c3",
+                                                "name": "c3",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "dcb999a0-bb9e-4739-b501-1e3b9597a67f",
+                                                "name": "c4",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "4e175127-f98b-4ce5-b26c-9915a57923d7",
+                                                "name": "Cụm bộ",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            }
+                                        ],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "c24807cf-041a-4d20-b221-d60ace526196",
+                                        "name": "cm12",
+                                        "children": [
+                                            {
+                                                "id": "b4a57937-85f6-468c-9c25-7d31b0465d88",
+                                                "name": "00. Cụm bộ",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "a58c0d1c-4669-42a2-b25d-5cea5b0bfe84",
+                                                "name": "c5",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "68f9c5a2-70d5-4eb0-a86b-bf3f3851ca2a",
+                                                "name": "c6",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "7a36a2d7-32e4-46d7-a6be-eee144ae3876",
+                                                "name": "c7",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "dfe3ba46-6b4d-423f-8560-d6dd90234607",
+                                                "name": "c8",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            }
+                                        ],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "88c1bacb-111b-4915-8e19-576e599bed8a",
+                                        "name": "cm13",
+                                        "children": [
+                                            {
+                                                "id": "3fc9f824-12fc-4413-9bdf-47357ebacf6e",
+                                                "name": "00. Cụm bộ",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "714d06a4-62a2-41b6-8bad-acb7a1d04cc3",
+                                                "name": "c09",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "f1632fd6-b40e-49d5-bf35-2b9b8cb63fc7",
+                                                "name": "c10",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "fbfdf137-9a80-4f79-ac88-9bf781fc65e8",
+                                                "name": "c11",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "765c1847-1373-4023-bc26-382fe0d780d9",
+                                                "name": "c12",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            },
+                                            {
+                                                "id": "0a72ed34-0ec4-4173-976a-9c21db010be9",
+                                                "name": "c13",
+                                                "children": [],
+                                                "antiMalware": false,
+                                                "advanceAntiMalwareDetection": false,
+                                                "eventsEnabled": true,
+                                                "isDynamic": false
+                                            }
+                                        ],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "b2f53356-a858-4b8c-aa24-c2a687058309",
+                                        "name": "Phong dieu hanh",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "16263802-5e6a-40d4-bfde-695919a2b920",
+                                        "name": "Phòng GB, Hoi truong",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "6738b11b-9195-4c52-98f7-a0e0efe25a0d",
+                        "name": "T5",
+                        "children": [
+                            {
+                                "id": "d1391025-8610-4a6b-87b2-311c17a85238",
+                                "name": "Trung tâm 586-May chu",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "0282d00f-aa63-4fa0-944f-6565b4c18856",
+                                "name": "Trung tâm 586-May tram",
+                                "children": [
+                                    {
+                                        "id": "b565f3e6-b47b-4ca5-bfe1-c0310e81c3e8",
+                                        "name": "Chỉ huy TT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "2b36e046-b9ef-4692-884b-79b6ed3f797e",
+                                        "name": "Chính trị",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "ddca0a4f-7c44-4b02-b9c3-3772f90c9e84",
+                                        "name": "Cụm 51",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "b1e7183a-b868-4744-82aa-42e5aaa8c4c8",
+                                        "name": "Cụm 52",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "57594700-a777-49eb-acc6-bab123b68014",
+                                        "name": "Cụm 53",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "46837225-08c1-47a5-9f72-0fd5cac417cf",
+                                        "name": "HCKT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "2b64f137-8f65-4a4c-bcb9-eee0deb3ff25",
+                                        "name": "PTM",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "5ef69792-b4b0-4ce2-a91f-0cf1671812cb",
+                                        "name": "Tài chính",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "991206cc-299c-48cc-9ebb-b9d40c62996a",
+                        "name": "T6",
+                        "children": [
+                            {
+                                "id": "bc5d912a-67cf-4618-bb44-fc8b6a2cdcee",
+                                "name": "TT6-May chu",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "1b3b367c-cb4e-4c82-b9f0-8b6f4a1144b4",
+                                "name": "TT6-May tram",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "f0c52f7b-b383-4bd5-9a13-3b3430cbe82d",
+                        "name": "T7",
+                        "children": [],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "05bdca73-f4a2-4312-97e5-d2f1440c0857",
+                        "name": "V4",
+                        "children": [
+                            {
+                                "id": "c3618dd7-998b-4471-93a3-295c635aab2d",
+                                "name": "V4-May chu",
+                                "children": [
+                                    {
+                                        "id": "8e77a494-d48e-46eb-b841-d3caae63a268",
+                                        "name": "May chu DA8",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "7400afe2-e84d-45ce-a1c0-2a43b46010ce",
+                                "name": "V4-May Tram",
+                                "children": [
+                                    {
+                                        "id": "41b67d6f-cd0a-41a6-9aeb-b2da0b443998",
+                                        "name": "Ban Chính trị",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "f6d2514e-1e64-4038-a1fd-fb482bc23cf0",
+                                        "name": "Ban Hành Chính",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "43e90edb-54d4-4ea8-bbfe-91b851254b3d",
+                                        "name": "Ban KH-TH",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "0180ee02-7a4b-4ac2-ab53-adc9decd441f",
+                                        "name": "Ban Tài Chính",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "56f32a04-641b-46f1-9a71-b330c2b29a5a",
+                                        "name": "Chỉ huy Viện",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "83b863b2-287c-40b7-9320-43dce0efdc0a",
+                                        "name": "Phòng HT ATTT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "3847b052-fea4-4c08-ba5c-67cffe223b9a",
+                                        "name": "Phòng PTMĐ",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "0f7b0343-6cb8-42e6-abb5-ee90a16e007b",
+                                        "name": "Phòng PTPM",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "e362954a-c18a-4151-b5a7-a0de578eeada",
+                                        "name": "Phòng TĐH CH-ĐK",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "09d90809-9e5f-4c24-8ff7-761db30e7b89",
+                                        "name": "Phòng VKM",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    }
+                ],
+                "antiMalware": false,
+                "advanceAntiMalwareDetection": false,
+                "eventsEnabled": true,
+                "isDynamic": false
+            },
+            {
+                "id": "c7077377-c8ff-436b-b074-32323d776712",
+                "name": "01. Mien Trung",
+                "children": [
+                    {
+                        "id": "e5edc94f-bbe3-4555-a913-ae80e4580396",
+                        "name": "T3-May chu",
+                        "children": [],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "4ab31d12-5746-45dc-a661-b896e80a6c7d",
+                        "name": "T3-May tram",
+                        "children": [
+                            {
+                                "id": "1f8ca30e-ccfa-40fa-81d5-1db9854cf33a",
+                                "name": "BTC",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "86e87dce-82ca-43e3-95d2-a168641c0e97",
+                                "name": "CHTT",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "b607b68c-4739-4a73-a5be-4e09d23326aa",
+                                "name": "Cụm 31",
+                                "children": [
+                                    {
+                                        "id": "385855e9-f0e1-4365-b071-76f1bff5bb8a",
+                                        "name": "Cụm bộ",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "27da42f2-8e3c-4def-9e04-c08c05237142",
+                                        "name": "Đội 1",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "c7227204-8079-4276-a1d2-b3ca31c1c850",
+                                        "name": "Đội 2",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "5647d088-2475-423d-a3ab-6a9496a5a9ec",
+                                "name": "Cụm 32",
+                                "children": [
+                                    {
+                                        "id": "1c6c329f-08a1-4ccf-b085-9a0e3a2c0260",
+                                        "name": "Cụm bộ",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "ff10721c-fa89-41e9-8bf4-7950ac36e0af",
+                                        "name": "Đội 5",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "bc5697c4-6262-48d0-af53-bf86197a00fd",
+                                        "name": "Đội 6",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "9b02ac0b-6837-4143-9868-a2d76324729d",
+                                "name": "Cụm 33",
+                                "children": [
+                                    {
+                                        "id": "fc77457f-cc13-4438-9227-285c1df1ff5b",
+                                        "name": "Cụm bộ",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "6e751782-9396-4ff0-9de0-c63b84520132",
+                                        "name": "Đội 10",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "ea10ed75-30e9-4e3f-b1c6-003cc6f1f6fe",
+                                        "name": "Đội 9",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "014f09c7-0aad-43f4-9b26-2e691efbd6be",
+                                "name": "PCT",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "43c3c232-da98-4ddd-8abd-c513bf5f009e",
+                                "name": "PHCKT",
+                                "children": [
+                                    {
+                                        "id": "5d7ce60b-b600-4fdd-b7ae-ba9831e16603",
+                                        "name": "TSC",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "1f1cfde5-a769-451f-aa37-cb5b3943d1c8",
+                                "name": "PTM",
+                                "children": [
+                                    {
+                                        "id": "b17e7502-c695-4fd0-aa1a-b519303da6ca",
+                                        "name": "PDH",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "23d6ecd3-bb81-425b-872a-e354835261ca",
+                                        "name": "PGB",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "f21c042e-22ae-46ae-81fc-15395132e062",
+                                        "name": "TMC",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    },
+                                    {
+                                        "id": "198aa6c1-40a7-4f53-9b10-1f26d852896b",
+                                        "name": "VT",
+                                        "children": [],
+                                        "antiMalware": false,
+                                        "advanceAntiMalwareDetection": false,
+                                        "eventsEnabled": true,
+                                        "isDynamic": false
+                                    }
+                                ],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    }
+                ],
+                "antiMalware": false,
+                "advanceAntiMalwareDetection": false,
+                "eventsEnabled": true,
+                "isDynamic": false
+            },
+            {
+                "id": "f4fd81d1-0de4-4270-843a-fefeaa78185a",
+                "name": "02. Mien Nam",
+                "children": [
+                    {
+                        "id": "efddd7e8-ba7b-4b36-9e12-bb9ed15d072c",
+                        "name": "T2-May chu",
+                        "children": [],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    },
+                    {
+                        "id": "4054b337-df8b-47b2-bad1-182f109caff8",
+                        "name": "T2-May tram",
+                        "children": [
+                            {
+                                "id": "99358807-9645-4138-83d1-7f87066dacaf",
+                                "name": "Bộ phận TC",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "4a3a1e4b-4d2d-4ead-a1e5-15aaefc11392",
+                                "name": "Các phòng chức năng",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "1de65ae4-7426-4607-9dfc-e4d45f862d23",
+                                "name": "CH Trung Tâm",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "508a837b-6cab-4c7c-a59f-df24b08fb648",
+                                "name": "Cụm 21",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "b2c8e0b5-cde3-4d8e-bf0b-5ebf9df2470d",
+                                "name": "Cụm 22",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "97da7ea1-6fe9-4d7d-a231-544e9a7da9ff",
+                                "name": "Cụm 23",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "a444e372-4387-45ed-9693-f0fd9f949776",
+                                "name": "Phòng CT",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "ab50cd95-7e58-472b-b666-82ca69145a8d",
+                                "name": "Phòng HC-KT",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            },
+                            {
+                                "id": "d5019f69-e2be-4c86-942c-c9da976f6798",
+                                "name": "Phòng TM",
+                                "children": [],
+                                "antiMalware": false,
+                                "advanceAntiMalwareDetection": false,
+                                "eventsEnabled": true,
+                                "isDynamic": false
+                            }
+                        ],
+                        "antiMalware": false,
+                        "advanceAntiMalwareDetection": false,
+                        "eventsEnabled": true,
+                        "isDynamic": false
+                    }
+                ],
+                "antiMalware": false,
+                "advanceAntiMalwareDetection": false,
+                "eventsEnabled": true,
+                "isDynamic": false
+            }
+        ],
+        "antiMalware": false,
+        "advanceAntiMalwareDetection": false,
+        "eventsEnabled": true,
+        "isDynamic": false
+    }
+}

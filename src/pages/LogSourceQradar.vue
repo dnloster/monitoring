@@ -2,15 +2,25 @@
 
 import DataTable from "datatables.net-vue3";
 import DataTablesCore from "datatables.net-bs5";
-import data from "../../public/data_qradar.json";
+import data from "../../public/a.json";
+import moment from "moment/moment";
+import 'moment/locale/vi';
 
 DataTable.use(DataTablesCore);
 
+moment.locale('vi')
+
 const columns = [
+    { data: "id" },
     { data: "name" },
-    { data: "ip_address" },
-    { data: "status" },
+    { data: "description" },
+    {
+        data: "last_event_time", render: function (data) {
+            return moment(data).format('Do MMMM YYYY, h:mm:ss a')
+        }
+    }
 ];
+
 
 </script>
 
@@ -23,15 +33,16 @@ const columns = [
                 </div>
             </div>
             <div>
-                <h2 class="text-center">System Health</h2>
+                <h2 class="text-center">Log Sources</h2>
             </div>
-            <DataTable :columns="columns" :rowHover="true" ajax="/data_qradar.json"
-                class="table table-hover table-striped" width="100%">
+            <DataTable :columns="columns" :rowHover="true" ajax="/a.json" class="table table-hover table-striped"
+                width="100%">
                 <thead class="border-top-0">
                     <tr>
+                        <th>ID</th>
                         <th>Tên máy chủ</th>
-                        <th>Địa chỉ IP</th>
-                        <th>Trạng thái</th>
+                        <th>Mô tả</th>
+                        <th style="width: 20%;">Tương tác cuối</th>
                     </tr>
                 </thead>
             </DataTable>

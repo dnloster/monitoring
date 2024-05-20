@@ -37,6 +37,7 @@ const Security = () => import("./components/settings/Security.vue");
 import Proxies from "./components/settings/Proxies.vue";
 import Backup from "./components/settings/Backup.vue";
 import About from "./components/settings/About.vue";
+import LogSourceQradar from "./pages/LogSourceQradar.vue";
 
 const routes = [
     {
@@ -197,6 +198,10 @@ const routes = [
     {
         path: "/qradar",
         component: QradarSystem,
+    },
+    {
+        path: "/log-source-qradar",
+        component: LogSourceQradar,
     },
     {
         path: "/fidelis",
